@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Projetos - Faculdade Senac</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>Observatório de Projetos Integradores</h1>
+
+        <p>
+            O projeto em questão se origina por uma demanda da Faculdade
+            Senac Pernambuco, com foco em criar um ambiente de registro
+            e consulta de PIs.
+        </p>
+
+
+
+        <input 
+            type="text" 
+            id="nome" 
+            placeholder="Digite seu nome..."
+        >
+
+        <input
+            type="text"
+            id="statusProjeto"
+            placeholder="Ex.: Em andamento, Finalizado, Pendente..."
+        >
+
+        <input
+            type="text"
+            id="cursoProjeto"
+            placeholder="Ex.: ADS, Jogos, Gestão..."
+        >
+
+        <input
+            type="text"
+            id="professorProjeto"
+            placeholder="Ex.: Claúdio, Filipe, João..."
+        >
+
+        <button class="btn-principal" onclick="mostrarMensagem()">
+            Clique aqui
+        </button>
+
+        <button class="btn-secundario" onclick="limparMensagem()">
+            Limpar
+        </button>
+
+        <button class="btn-limparTodos" onclick="limparTodos()">
+            Limpar Todos
+        </button>
+
+        <hr>
+
+        <h2>Projetos Cadastrados</h2>
+
+        <div id="listaProjetos"></div>
+
+        <p id="contadorProjetos">
+            Total de Projetos: 0
+        </p>
+
+        <p id="resultado"></p>
+
+        <hr>
+
+        <img id="logoSenac" src="imgs/logoSenac.png">
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
